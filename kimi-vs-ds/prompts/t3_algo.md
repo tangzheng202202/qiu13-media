@@ -1,0 +1,1 @@
+Implement the functions described in `TASK.md` in `intervals.py` and add tests in `test_intervals.py`. Make sure your tests pass. Your implementation will also be checked against a hidden test suite that follows the spec exactly.

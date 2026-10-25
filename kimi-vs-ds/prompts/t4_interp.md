@@ -1,0 +1,1 @@
+Implement the interpreter described in `SPEC.md` as `lang.py` and add tests in `test_lang.py`. Make sure your tests pass. Your implementation will also be checked against a hidden test suite that follows the spec exactly, including error cases and edge cases.

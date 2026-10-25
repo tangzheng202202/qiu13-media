@@ -1,0 +1,25 @@
+{
+ "model": "deepseek-flash",
+ "task": "t3_algo",
+ "wall_s": 27.3,
+ "steps": 5,
+ "prompt": 16989,
+ "completion": 4884,
+ "cached": 15488,
+ "calls": 5,
+ "tests": "3 passed in 0.01s",
+ "pass": true,
+ "raw_last_usage": {
+  "prompt_tokens": 5455,
+  "completion_tokens": 458,
+  "total_tokens": 5913,
+  "prompt_tokens_details": {
+   "cached_tokens": 5248
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 307
+  },
+  "prompt_cache_hit_tokens": 5248,
+  "prompt_cache_miss_tokens": 207
+ }
+}

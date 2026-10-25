@@ -1,0 +1,2 @@
+03:14:02 ERR ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+03:24:31 ERR HTTPSConnectionPool(host='api.moonshot.cn', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))

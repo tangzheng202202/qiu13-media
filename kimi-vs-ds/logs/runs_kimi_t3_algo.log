@@ -1,0 +1,3 @@
+HTTP 429 {"error":{"message":"The engine is currently overloaded, please try again later","type":"engine_overloaded_error"}}
+HTTP 429 {"error":{"message":"The engine is currently overloaded, please try again later","type":"engine_overloaded_error"}}
+{"model": "kimi-k3.1-pro", "task": "t3_algo", "wall_s": 180.5, "steps": 5, "prompt": 13041, "completion": 5494, "cached": 7936, "calls": 5, "retry_wait": 51.32050275802612, "tests": "3 passed in 0.01s", "pass": true, "raw_last_usage": {"prompt_tokens": 4943, "completion_tokens": 1313, "total_tokens": 6256, "cached_tokens": 3840, "completion_tokens_details": {"reasoning_tokens": 1191}, "prompt_tokens_details": {"cached_tokens": 3840, "cache_write_tokens": 1024}}}

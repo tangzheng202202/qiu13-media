@@ -1,0 +1,28 @@
+{
+ "model": "kimi-k3.1-pro",
+ "task": "t5_cache",
+ "wall_s": 1948.7,
+ "steps": 38,
+ "prompt": 1495339,
+ "completion": 71013,
+ "cached": 1403136,
+ "calls": 38,
+ "nerr": 2,
+ "retry_wait": 338.8319902420044,
+ "tests": "19 passed in 0.66s",
+ "pass": true,
+ "score": "19/19",
+ "raw_last_usage": {
+  "prompt_tokens": 88484,
+  "completion_tokens": 1203,
+  "total_tokens": 89687,
+  "cached_tokens": 86016,
+  "completion_tokens_details": {
+   "reasoning_tokens": 1067
+  },
+  "prompt_tokens_details": {
+   "cached_tokens": 86016,
+   "cache_write_tokens": 2304
+  }
+ }
+}

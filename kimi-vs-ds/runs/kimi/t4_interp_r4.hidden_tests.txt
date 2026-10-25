@@ -1,0 +1,16 @@
+
+==================================== ERRORS ====================================
+_______________________ ERROR collecting hidden_test.py ________________________
+ImportError while importing test module '/workspace/content-team/01-inbox/kimi-vs-deepseek-2026-10-24/runs/kimi/t4_interp_r4/hidden_test.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.13/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hidden_test.py:1: in <module>
+    import pytest, lang
+E   ModuleNotFoundError: No module named 'lang'
+=========================== short test summary info ============================
+ERROR hidden_test.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.07s

@@ -1,0 +1,1 @@
+Implement the feature described in `SPEC.md` in a new module `ratelimit.py` and add tests in `test_ratelimit.py`. Make sure your tests pass. Your implementation will also be checked against a hidden test suite that follows the spec exactly.

@@ -1,0 +1,69 @@
+.................F.....................                                  [100%]
+=================================== FAILURES ===================================
+________________________________ test_let_scope ________________________________
+
+    def test_let_scope():
+>       assert run("let x = 1\n{ let x = 2 }\nx") == 1
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+hidden_test.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+lang.py:872: in run
+    statements = _Parser(tokens).parse()
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+lang.py:329: in parse
+    statements = self.statement_list("EOF")
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+lang.py:337: in statement_list
+    statements.append(self.statement())
+                      ^^^^^^^^^^^^^^^^
+lang.py:368: in statement
+    return _ExpressionStatement(self.expression())
+                                ^^^^^^^^^^^^^^^^^
+lang.py:453: in expression
+    return self.or_expression()
+           ^^^^^^^^^^^^^^^^^^^^
+lang.py:456: in or_expression
+    expr = self.and_expression()
+           ^^^^^^^^^^^^^^^^^^^^^
+lang.py:463: in and_expression
+    expr = self.equality_expression()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+lang.py:470: in equality_expression
+    expr = self.comparison_expression()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lang.py:479: in comparison_expression
+    expr = self.additive_expression()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+lang.py:488: in additive_expression
+    expr = self.multiplicative_expression()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lang.py:495: in multiplicative_expression
+    expr = self.unary_expression()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+lang.py:505: in unary_expression
+    return self.power_expression()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+lang.py:508: in power_expression
+    expr = self.call_expression()
+           ^^^^^^^^^^^^^^^^^^^^^^
+lang.py:517: in call_expression
+    expr = self.primary()
+           ^^^^^^^^^^^^^^
+lang.py:553: in primary
+    self.error("expected an expression")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <lang._Parser object at 0x7f1100cce9e0>
+message = 'expected an expression'
+token = _Token(kind='{', value='{', line=2, column=1)
+
+    def error(self, message: str, token: _Token | None = None) -> None:
+        token = self.current if token is None else token
+>       raise LangError(f"{message} at line {token.line}, column {token.column}")
+E       lang.LangError: expected an expression at line 2, column 1
+
+lang.py:318: LangError
+=========================== short test summary info ============================
+FAILED hidden_test.py::test_let_scope - lang.LangError: expected an expressio...
+1 failed, 38 passed in 0.17s

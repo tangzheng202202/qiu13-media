@@ -1,0 +1,33 @@
+HTTP 429 {"error":{"message":"The engine is currently overloaded, please try again later","type":"engine_overloaded_error"}}
+HTTP 429 {"error":{"message":"The engine is currently overloaded, please try again later","type":"engine_overloaded_error"}}
+HTTP 429 {"error":{"message":"The engine is currently overloaded, please try again later","type":"engine_overloaded_error"}}
+HTTP 429 {"error":{"message":"The engine is currently overloaded, please try again later","type":"engine_overloaded_error"}}
+HTTP 429 {"error":{"message":"The engine is currently overloaded, please try again later","type":"engine_overloaded_error"}}
+HTTP 429 {"error":{"message":"The engine is currently overloaded, please try again later","type":"engine_overloaded_error"}}
+HTTP 429 {"error":{"message":"The engine is currently overloaded, please try again later","type":"engine_overloaded_error"}}
+HTTP 429 {"error":{"message":"The engine is currently overloaded, please try again later","type":"engine_overloaded_error"}}
+HTTP 429 {"error":{"message":"The engine is currently overloaded, please try again later","type":"engine_overloaded_error"}}
+HTTP 429 {"error":{"message":"The engine is currently overloaded, please try again later","type":"engine_overloaded_error"}}
+HTTP 429 {"error":{"message":"The engine is currently overloaded, please try again later","type":"engine_overloaded_error"}}
+HTTP 429 {"error":{"message":"The engine is currently overloaded, please try again later","type":"engine_overloaded_error"}}
+HTTP 429 {"error":{"message":"The engine is currently overloaded, please try again later","type":"engine_overloaded_error"}}
+HTTP 429 {"error":{"message":"The engine is currently overloaded, please try again later","type":"engine_overloaded_error"}}
+ERR HTTPSConnectionPool(host='api.moonshot.cn', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))
+HTTP 429 {"error":{"message":"The engine is currently overloaded, please try again later","type":"engine_overloaded_error"}}
+HTTP 429 {"error":{"message":"The engine is currently overloaded, please try again later","type":"engine_overloaded_error"}}
+HTTP 429 {"error":{"message":"The engine is currently overloaded, please try again later","type":"engine_overloaded_error"}}
+HTTP 429 {"error":{"message":"The engine is currently overloaded, please try again later","type":"engine_overloaded_error"}}
+HTTP 429 {"error":{"message":"The engine is currently overloaded, please try again later","type":"engine_overloaded_error"}}
+HTTP 429 {"error":{"message":"The engine is currently overloaded, please try again later","type":"engine_overloaded_error"}}
+HTTP 429 {"error":{"message":"The engine is currently overloaded, please try again later","type":"engine_overloaded_error"}}
+HTTP 429 {"error":{"message":"The engine is currently overloaded, please try again later","type":"engine_overloaded_error"}}
+HTTP 429 {"error":{"message":"The engine is currently overloaded, please try again later","type":"engine_overloaded_error"}}
+HTTP 429 {"error":{"message":"The engine is currently overloaded, please try again later","type":"engine_overloaded_error"}}
+HTTP 429 {"error":{"message":"The engine is currently overloaded, please try again later","type":"engine_overloaded_error"}}
+Traceback (most recent call last):
+  File "/workspace/content-team/01-inbox/kimi-vs-deepseek-2026-10-24/harness.py", line 43, in <module>
+    r.raise_for_status(); j=r.json(); u=j.get("usage",{})
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/workspace/content-team/01-inbox/kimi-vs-deepseek-2026-10-24/.venv/lib/python3.13/site-packages/requests/models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions

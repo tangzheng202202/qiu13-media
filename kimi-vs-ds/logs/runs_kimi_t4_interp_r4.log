@@ -1,0 +1,10 @@
+03:26:22 ERR ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+03:31:23 ERR ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+03:36:24 ERR ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+03:41:25 ERR ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+03:46:26 ERR ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+03:51:27 ERR ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+03:56:28 ERR ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+04:01:29 ERR ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+07:06:22 ERR HTTPSConnectionPool(host='api.moonshot.cn', port=443): Read timed out. (read timeout=600)
+ABORTED overload >40min
